@@ -1310,7 +1310,8 @@ out_pic_individial << position << " " << e1 << endl;
 //boltzmann weight
 
 //log energies; compute minimum
-x1=-3.0;x2=7.0;delta_x=(x2-x1)/(1.0*n_points);
+//flag: won't draw pictures properly if limits too tight
+x1=-5.0;x2=10.0;delta_x=(x2-x1)/(1.0*n_points);
 for(i=0;i<n_points;i++){
 
 position=x1+(x2-x1)*i/(1.0*n_points-1.0);
